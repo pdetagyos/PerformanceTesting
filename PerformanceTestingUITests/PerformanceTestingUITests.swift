@@ -33,11 +33,20 @@ class PerformanceTestingUITests: XCTestCase {
     }
 
     func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
+        // This measures how long it takes to launch your application.
+        measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+            XCUIApplication().launch()
+        }
+    }
+    
+    func testCustomSignpost() {
+        let metric = XCTOSSignpostMetric(subsystem: "com.ptss.performance", category: "PerformanceMeasurement", name: "PerfTrace")
+
+        let app = XCUIApplication()
+        measure(metrics: [metric]) {
+            app.launch()
+            app.buttons["Button"].tap()
+            app.buttons["Done!"].waitForExistence(timeout: 3)
         }
     }
 }

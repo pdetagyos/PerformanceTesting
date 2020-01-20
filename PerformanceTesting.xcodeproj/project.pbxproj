@@ -15,6 +15,7 @@
 		9E70169723D37403000848D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E70169523D37403000848D4 /* LaunchScreen.storyboard */; };
 		9E7016A223D37403000848D4 /* PerformanceTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7016A123D37403000848D4 /* PerformanceTestingTests.swift */; };
 		9E7016AD23D37403000848D4 /* PerformanceTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7016AC23D37403000848D4 /* PerformanceTestingUITests.swift */; };
+		9E7016BB23D3755E000848D4 /* PerformanceMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7016BA23D3755E000848D4 /* PerformanceMeasurement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9E7016A823D37403000848D4 /* PerformanceTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerformanceTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7016AC23D37403000848D4 /* PerformanceTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTestingUITests.swift; sourceTree = "<group>"; };
 		9E7016AE23D37403000848D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E7016BA23D3755E000848D4 /* PerformanceMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMeasurement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9E70169323D37403000848D4 /* Assets.xcassets */,
 				9E70169523D37403000848D4 /* LaunchScreen.storyboard */,
 				9E70169823D37403000848D4 /* Info.plist */,
+				9E7016BA23D3755E000848D4 /* PerformanceMeasurement.swift */,
 			);
 			path = PerformanceTesting;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				9E70168F23D373F8000848D4 /* ViewController.swift in Sources */,
 				9E70168B23D373F8000848D4 /* AppDelegate.swift in Sources */,
 				9E70168D23D373F8000848D4 /* SceneDelegate.swift in Sources */,
+				9E7016BB23D3755E000848D4 /* PerformanceMeasurement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

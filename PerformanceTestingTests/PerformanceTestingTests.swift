@@ -26,8 +26,15 @@ class PerformanceTestingTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        let vc = ViewController()
+        self.measureMetrics([XCTPerformanceMetric.wallClockTime], automaticallyStartMeasuring: false) {
+            let exp = expectation(description: "async")
+            self.startMeasuring()
+            vc.longRunningTask(delay: 1) {
+                self.stopMeasuring()
+                exp.fulfill()
+            }
+            wait(for: [exp], timeout: 3)
         }
     }
 
